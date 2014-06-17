@@ -357,6 +357,7 @@ class Installer:
       if pypy:  self.__run_command(pypy_bin + cmd, retry=True)
 
     self.__download("https://bitbucket.org/pypy/pypy/downloads/pypy-2.2-linux64.tar.bz2")
+    self.__run_command("mv pypy-2.2-linux64.tar.bz2* pypy-2.2-linux64.tar.bz2")
     self.__run_command("tar xjf pypy-2.2-linux64.tar.bz2")
     self.__run_command('ln -sf pypy-2.2-linux64 pypy')
     self.__download("http://www.python.org/ftp/python/2.7.6/Python-2.7.6.tgz")
