@@ -125,7 +125,7 @@ class Installer:
     self.__run_command("perl perl-build.pl -DDEBUGGING=-g 5.18.2 ~/FrameworkBenchmarks/installs/perl-5.18", retry=True)
     self.__download("http://cpanmin.us", "cpanminus.pl")
     self.__run_command("~/FrameworkBenchmarks/installs/perl-5.18/bin/perl cpanminus.pl --notest --no-man-page App::cpanminus", retry=True)
-    self.__run_command("~/FrameworkBenchmarks/installs/perl-5.18/bin/cpanm -f --notest --no-man-page DBI DBD::mysql Kelp Dancer Mojolicious Kelp::Module::JSON::XS Dancer::Plugin::Database Starman Plack JSON Web::Simple DBD::Pg JSON::XS EV HTTP::Parser::XS Monoceros EV IO::Socket::IP IO::Socket::SSL", retry=True)
+    self.__run_command("~/FrameworkBenchmarks/installs/perl-5.18/bin/cpanm -f --notest --no-man-page DBI DBD::mysql Kelp Dancer Mojolicious Kelp::Module::JSON::XS Dancer::Plugin::Database Starman Plack JSON Web::Simple DBD::Pg JSON::XS EV HTTP::Parser::XS Monoceros EV IO::Socket::IP IO::Socket::SSL Memoize", retry=True)
 
     #
     # php
